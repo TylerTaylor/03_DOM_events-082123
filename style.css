@@ -1,0 +1,163 @@
+/* remove the white space at the top with a 'reset' */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    transition: opacity 400ms ease-in;
+}
+  
+.transparent {
+    opacity: 0;
+}
+
+header {
+    background-image: url("assets/books.png");
+    /* height: 50%; */
+    opacity: 0.8;
+}
+  
+header div h1, header div h2 {
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 2px 4px #252525;
+    font-family: Verdana;
+}
+
+header div h1 {
+    padding: 200px;
+}
+
+header div h2 {
+    color: aliceblue;
+    font-style: italic;
+}
+
+.list ul {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.list-li {
+    list-style: none;
+    width: 200px;
+    box-shadow: 4px 4px 10px #c9c8c8;
+    padding: 5px;
+    margin: 10px;
+}
+
+.list-li h3 {
+    height: 70px;
+}
+
+.list-li p {
+    margin-bottom: 5px;
+}
+
+.list-li img {
+    width: 190px;
+    height: 265px;
+}
+
+.list-li button {
+    width: 190px;
+    margin: 15px 5px 15px 5px;
+    border: none;
+    background-color: #43d4fc;
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    font-size: large;
+    font-weight: bold;
+}
+
+button, [type="submit"] {
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer div p {
+    background-color: red;
+}
+  
+#form-wrapper {
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+  
+label {
+    font-family: Verdana;
+}
+  
+input {
+    height: 40px;
+    max-width: 100%;
+    margin: 3px;
+    border: 1px solid black;
+    padding: 5px 15px 5px 15px;
+}
+  
+input[type=submit] {
+    border: none;
+    background-color: #53a872;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    max-width: 100%;
+    margin-top: 10px;
+}
+  
+form {
+    margin: 10px auto 10px auto;
+    width: 400px; 
+    display: flex;
+    flex-direction: column;
+    /* these 2 lines of styles help animate transition of form from collapsed to visible */
+    max-height: 371px;
+    transition: max-height 200ms ease-in-out;
+}
+  
+footer {
+    text-align: center;
+}
+  
+.book-inventory-form{
+    width: 100%;
+}
+  
+.book-inventory-form input{
+    height: 30px;
+    width: 100%;
+    margin: 3px;
+}
+
+/* allows us to animate a collapsed element appearing after a click  */
+.collapsed {
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+#toggle-form {
+    border: none;
+    background-color: #53a872;
+    color: rgb(255, 255, 255);
+    padding: 5px 15px 5px 15px;
+    font-size: 1.1em;
+}
